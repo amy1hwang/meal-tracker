@@ -7,8 +7,13 @@ import { Meal } from './meal.model';
   template: `
   <div class="container">
     <div id="header">
-      <h1>My Daily Meal Tracker</h1>
-      <h3>for {{month}}/{{day}}/{{year}}</h3>
+      <div id="header-text">
+        <h1>My Daily Meal Tracker</h1>
+        <h3>for {{month}}/{{day}}/{{year}}</h3>
+      </div>
+      <div id="header-img">
+        <img src="../resources/images/ramen.gif">
+      </div>
     </div>
     <br>
     <new-meal (newMealSender)="addMeal($event)"></new-meal>
