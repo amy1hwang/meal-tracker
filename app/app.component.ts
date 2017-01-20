@@ -5,8 +5,9 @@ import { Meal } from './meal.model';
   selector: 'app-root',
   template: `
   <div class="container">
-    <h1>My Daily Meal Tracker</h1>
-    <h3>{{month}}/{{day}}/{{year}}</h3>
+    <input [(ngModel)]="name" type="text" placeholder="Your Name">
+    <h1>{{name}}'s Daily Meal Tracker</h1>
+    <h3>for {{month}}/{{day}}/{{year}}</h3>
     <br>
     <new-meal (newMealSender)="addMeal($event)"></new-meal>
     <hr>
@@ -24,11 +25,15 @@ export class AppComponent {
   year: number = this.currentTime.getFullYear();
   //meal-list section
   masterMealList: Meal[] = [
-    new Meal("Pizza", "3 slices of hawaiian pizza with diet coke", 520),
-    new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 354),
-    new Meal("Sushi", "6 pieces of salmon sushi", 254),
-    new Meal("Cheeseburger", "ate 2 burgers", 1054)
+    // new Meal("Pizza", "3 slices of hawaiian pizza with diet coke", 520),
+    // new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 354),
+    // new Meal("Sushi", "6 pieces of salmon sushi", 254),
+    // new Meal("Cheeseburger", "ate 2 burgers", 1054)
   ];
+  //new-meal section
+  addMeal(newMealFromChild: Meal) {
+    this.masterMealList.push(newMealFromChild);
+  }
   //edit section
   selectedMeal = null;
   editMeal(clickedMeal) {
@@ -36,9 +41,5 @@ export class AppComponent {
   }
   finishedEditing() {
     this.selectedMeal = null;
-  }
-  //new-meal section
-  addMeal(newMealFromChild: Meal) {
-    this.masterMealList.push(newMealFromChild);
   }
 }

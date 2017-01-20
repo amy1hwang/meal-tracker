@@ -9,7 +9,7 @@ import { Meal } from './meal.model';
     <option value="highCalorieFood">All High-Calorie Food</option>
     <option value="lowCalorieFood">All Low-Calorie Food</option>
   </select>
-  <ul  *ngFor="let currentTask of childTaskList | filtering:filterByCalories">
+  <ul  *ngFor="let currentMeal of childMealList | filtering:filterByCalories">
      <li><strong>Meal:</strong> {{currentMeal.name}}</li>
      <li><strong>Details:</strong> {{currentMeal.details}}</li>
      <li><strong>Calories:</strong> {{currentMeal.calories}}</li>
@@ -39,5 +39,3 @@ export class MealListComponent {
     this.filterByCalories = optionFromMenu;
   }
 }
-
-// [class]="caloriesColor(currentMeal)"

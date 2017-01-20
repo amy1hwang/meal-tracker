@@ -13,7 +13,7 @@ export class FilteringPipe implements PipeTransform {
     for (var i = 0; i < input.length; i++) {
       if(desiredCalories === "highCalorieFood") {
       for (var i = 0; i < input.length; i++) {
-        if (Meal[i].calories >= 500) {
+        if (input[i].calories >= 500) {
           output.push(input[i]);
         }
       }
