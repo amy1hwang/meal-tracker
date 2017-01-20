@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { Meal } from './meal.model';
 
+// <input [(ngModel)]="name" type="text" placeholder="Your Name">
 @Component({
   selector: 'app-root',
   template: `
   <div class="container">
-    <input [(ngModel)]="name" type="text" placeholder="Your Name">
-    <h1>{{name}}'s Daily Meal Tracker</h1>
-    <h3>for {{month}}/{{day}}/{{year}}</h3>
+    <div id="header">
+      <h1>My Daily Meal Tracker</h1>
+      <h3>for {{month}}/{{day}}/{{year}}</h3>
+    </div>
     <br>
     <new-meal (newMealSender)="addMeal($event)"></new-meal>
     <hr>
@@ -24,12 +26,7 @@ export class AppComponent {
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
   //meal-list section
-  masterMealList: Meal[] = [
-    // new Meal("Pizza", "3 slices of hawaiian pizza with diet coke", 520),
-    // new Meal("Hamburger", "Didn't get a soda or cheese on my burger!", 354),
-    // new Meal("Sushi", "6 pieces of salmon sushi", 254),
-    // new Meal("Cheeseburger", "ate 2 burgers", 1054)
-  ];
+  masterMealList: Meal[] = [];
   //new-meal section
   addMeal(newMealFromChild: Meal) {
     this.masterMealList.push(newMealFromChild);

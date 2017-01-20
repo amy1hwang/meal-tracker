@@ -22,13 +22,16 @@ export class MealListComponent {
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
 
-  caloriesColor(currentMeal){
-    if (currentMeal.calories > 500){
-      return "bg-danger";
-    } else {
-      return  "bg-warning";
-    }
-  }
+  // totalCalories() {
+  //   var input: Meal[];
+  //   var total: number = 0;
+  //   for (var i = 0; i < input.length; i++) {
+  //     total += input[i].calories;
+  //     console.log(input[0].calories);
+  //   };
+  //   console.log(total);
+  //   return total;
+  // }
 
   editButtonHasBeenClicked(mealToEdit: Meal) {
     this.clickSender.emit(mealToEdit);

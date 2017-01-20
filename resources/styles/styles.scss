@@ -1,0 +1,19 @@
+
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+#eat {
+  margin-top: 50vh;
+  transform: translateY(-25vh);
+  h2 {
+    text-align: center;
+  }
+}
+
+header {
+  margin: 0;
+}
