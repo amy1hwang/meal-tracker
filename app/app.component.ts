@@ -7,14 +7,9 @@ import { Meal } from './meal.model';
   <div class="container">
     <h1>My Daily Meal Tracker</h1>
     <h3>{{month}}/{{day}}/{{year}}</h3>
+    <new-meal (newMealSender)="addMeal($event)"></new-meal>
     <meal-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></meal-list>
-     <div *ngIf="selectedMeal">
-       <h3>Edit Meal Information</h3>
-       <input [(ngModel)]="selectedMeal.name">
-       <input [(ngModel)]="selectedMeal.details">
-       <input [(ngModel)]="selectedMeal.calories">
-       <button (click)="finishedEditing()">Submit</button>
-     </div>
+    <edit-meal [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></edit-meal>
   </div>
   `
 })
@@ -38,5 +33,9 @@ export class AppComponent {
   }
   finishedEditing() {
     this.selectedMeal = null;
+  }
+  //new-meal section
+  addMeal(newMealFromChild: Meal) {
+    this.masterMealList.push(newMealFromChild);
   }
 }
