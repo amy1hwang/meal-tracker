@@ -7,8 +7,11 @@ import { Meal } from './meal.model';
   <div class="container">
     <h1>My Daily Meal Tracker</h1>
     <h3>{{month}}/{{day}}/{{year}}</h3>
+    <br>
     <new-meal (newMealSender)="addMeal($event)"></new-meal>
+    <hr>
     <meal-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></meal-list>
+    <hr>
     <edit-meal [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></edit-meal>
   </div>
   `
