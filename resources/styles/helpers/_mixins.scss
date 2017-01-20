@@ -1,0 +1,13 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin button($bg, $radius, $border, $width, $height) {
+  background: $bg;
+  border-radius: $radius;
+  border: $border;
+  box-shadow: none;
+  width: $width;
+  height: $height;
+}

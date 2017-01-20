@@ -1,0 +1,38 @@
+#button {
+  @include size(100%, 40px);
+  position: relative;
+  &:after {
+    @include button(url(../../resources/images/cookies.png), 5px, null, 100%, 100%);
+    content: "";
+    background-position: center;
+    background-size: 15%;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;;
+    z-index: 1;
+  }
+  button {
+    @include button(rgba(#f7c291, .6), 5px, none, 100%, 100%);
+    position: relative;
+    z-index: 2;
+    padding: 5px;
+    font-size: 1.3em;
+    letter-spacing: 10px;
+    transition: all .3s;
+    &:hover {
+      background: rgba(#f7c291, 1);
+      color: white;
+    }
+  }
+}
+
+#edit-button {
+  @include button(rgba(#f7c291, .6), 5px, none, 100%, 30px);
+  &:hover {
+    background: rgba(#f7c291, 1);
+    color: white;
+  }
+}

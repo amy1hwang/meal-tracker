@@ -11,7 +11,9 @@ import { Meal } from './meal.model';
         <input #newDetails placeholder="Meal Details">
         <input #newCalories placeholder="Calories">
       </div>
-      <button (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value=''; newCalories.value='';">SUBMIT</button>
+      <div id="button">
+        <button (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value=''; newCalories.value='';">SUBMIT</button>
+      </div>
     </div>
   `
 })

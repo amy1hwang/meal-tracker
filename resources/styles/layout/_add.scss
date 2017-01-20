@@ -25,21 +25,4 @@
       width: 17%;
     }
   }
-  button {
-    width: 100%;
-    height: 40px;
-    padding: 5px;
-    background: rgba(#f7c291, .7);
-    border-radius: 3px;
-    box-shadow: none;
-    border: none;
-    font-size: 1.3em;
-    letter-spacing: 10px;
-    color: rgba(black, .6);
-    transition: all .3s;
-    &:hover {
-      background: rgba(#f7c291, 1);
-      color: white;
-    }
-  }
 }

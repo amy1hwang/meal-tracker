@@ -1,0 +1,19 @@
+#list {
+  max-width: 30%;
+  select {
+    margin-bottom: 20px;
+  }
+  ul {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  li {
+    list-style: none;
+    padding: 5px 0;
+  }
+}
+
+#list-flex {
+  display: inline-block;
+}
