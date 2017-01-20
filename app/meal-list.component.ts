@@ -4,11 +4,11 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'meal-list',
   template: `
-  <ul [class]="caloriesColor(currentMeal)" *ngFor="let currentMeal of meals">
+  <ul *ngFor="let currentMeal of childMealList">
      <li><strong>Meal:</strong> {{currentMeal.name}}</li>
      <li><strong>Details:</strong> {{currentMeal.details}}</li>
      <li><strong>Calories:</strong> {{currentMeal.calories}}</li>
-     <button (click)="editMeal(currentMeal)">Edit</button>
+     <button (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
    </ul>
   `
 })
@@ -24,4 +24,10 @@ export class MealListComponent {
       return  "bg-warning";
     }
   }
+
+  editButtonHasBeenClicked(mealToEdit: Meal) {
+    this.clickSender.emit(mealToEdit);
+  }
 }
+
+// [class]="caloriesColor(currentMeal)"
