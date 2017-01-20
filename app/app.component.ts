@@ -12,7 +12,6 @@ import { Meal } from './meal.model';
         <h3>for {{month}}/{{day}}/{{year}}</h3>
       </div>
       <div id="header-img">
-        <img src="../resources/images/ramen.gif">
       </div>
     </div>
     <br>
