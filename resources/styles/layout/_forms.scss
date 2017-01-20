@@ -10,11 +10,12 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 10vh;
+  width: 750px;
 }
 
 
 app-root {
-  max-width: 750px;
+  width: 750px;
   display: flex;
   justify-content: center;
 }

@@ -1,5 +1,5 @@
 #header {
-  border-bottom: 10px double $header-light;
+  border-bottom: 10px double $green-light;
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;;
@@ -7,7 +7,7 @@
 
 #header-text {
   width: 50%;
-  color: $header;
+  color: $green;
   text-align: right;
   h1 {
     margin-top: 0;
