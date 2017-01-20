@@ -13,6 +13,12 @@ import { Component } from '@angular/core';
        <button (click)="editTask()">Edit!</button>
      </ul>
   </div>
+  <div>
+    <h3>Edit Meal Information</h3>
+    <input [(ngModel)]="selectedMeal.name">
+    <input [(ngModel)]="selectedMeal.details">
+    <input [(ngModel)]="selectedMeal.calories">
+  </div>
   `
 })
 
@@ -33,6 +39,10 @@ export class AppComponent {
     } else {
       return  "bg-warning";
     }
+  }
+  selectedMeal: Meal = this.meals[0];
+  editMeal(clickedMeal) {
+    this.selectedMeal = clickedMeal;
   }
 }
 
