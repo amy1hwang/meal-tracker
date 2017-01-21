@@ -1,3 +1,10 @@
+@mixin h3() {
+  h3 {
+    margin-bottom: 20px;
+    color: darken(green, 5%);
+  }
+}
+
 @mixin size($width, $height) {
   width: $width;
   height: $height;
@@ -10,4 +17,29 @@
   box-shadow: none;
   width: $width;
   height: $height;
+}
+
+@mixin input() {
+  .input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  input {
+    height: 40px;
+    padding: 5px 10px;
+    color: $green;
+    border-radius: 5px;
+    border: 3px solid rgba(#f7c291, .7);
+    background: rgba(white, .9);
+    &:first-of-type {
+      width: 25%;
+    }
+    &:nth-of-type(2) {
+      width: 55%;
+    }
+    &:last-of-type {
+      width: 17%;
+    }
+  }
 }

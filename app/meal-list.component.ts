@@ -5,10 +5,12 @@ import { Meal } from './meal.model';
   selector: 'meal-list',
   template: `
   <div id="list">
+    <h3>Meal Log</h3>
+    Fliter by calories:
     <select (change)="onChange($event.target.value)">
       <option value="allMeals" selected="selected">All Meals</option>
-      <option value="highCalorieFood">All High-Calorie Food</option>
-      <option value="lowCalorieFood">All Low-Calorie Food</option>
+      <option value="highCalorieFood">All High-Calorie Meals ( > 500)</option>
+      <option value="lowCalorieFood">All Low-Calorie Meals ( < 500)</option>
     </select>
     <div id="list-flex">
       <ul  *ngFor="let currentMeal of childMealList | filtering:filterByCalories">

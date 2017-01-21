@@ -4,11 +4,13 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'edit-meal',
   template: `
-    <div *ngIf="childSelectedMeal">
+    <div id="edit" *ngIf="childSelectedMeal">
       <h3>Edit Meal Information</h3>
-      <input [(ngModel)]="childSelectedMeal.name">
-      <input [(ngModel)]="childSelectedMeal.details">
-      <input [(ngModel)]="childSelectedMeal.calories">
+      <div class="input">
+        <input [(ngModel)]="childSelectedMeal.name">
+        <input [(ngModel)]="childSelectedMeal.details">
+        <input [(ngModel)]="childSelectedMeal.calories">
+      </div>
       <button (click)="doneButtonClicked()">Submit</button>
     </div>
   `

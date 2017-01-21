@@ -1,11 +1,10 @@
 body {
-  background: rgb(254, 242, 230);
-  height: 100vh;
   display: flex;
   justify-content: center;;
 }
 
 .container {
+  width: 750px;
   margin: auto;
   margin: 0;
   padding: 0;
@@ -13,10 +12,10 @@ body {
   width: 750px;
 }
 
-
 app-root {
-  width: 750px;
+  background: $bg;
+  width: 100vw;
   display: flex;
   justify-content: center;
-  color: rgb(80, 46, 15); 
+  color: rgb(80, 46, 15);
 }

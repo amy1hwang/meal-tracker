@@ -1,0 +1,5 @@
+#edit {
+  padding-bottom: 100px;
+  @include h3();
+  @include input();
+}

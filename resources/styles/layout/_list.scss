@@ -1,12 +1,22 @@
 #list {
-  max-width: 30%;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba($green-light, .5);
+  @include h3();
   select {
     margin-bottom: 20px;
+    padding: 5px;
+    height: 30px;
+    border: 1.5px solid darken(#f7c291, 10%);
+    background: rgba(#f7c291, 0);
+    font-weight: 500;
+  }
+  option {
   }
   ul {
-    width: 100%;
+    width: 30%;
     padding: 0;
     margin-bottom: 10px;
+    display: inline-block;
   }
   li {
     list-style: none;
@@ -15,5 +25,7 @@
 }
 
 #list-flex {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

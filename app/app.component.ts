@@ -16,9 +16,9 @@ import { Meal } from './meal.model';
     </div>
     <br>
     <new-meal (newMealSender)="addMeal($event)"></new-meal>
-    <hr>
+    <br>
     <meal-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></meal-list>
-    <hr>
+    <br>
     <edit-meal [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></edit-meal>
   </div>
   `
