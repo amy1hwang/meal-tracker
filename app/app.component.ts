@@ -31,8 +31,6 @@ export class AppComponent {
   year: number = this.currentTime.getFullYear();
   //meal-list section
   masterMealList: Meal[] = [
-    new Meal("Pizza", "2 slices of cheese pizza", 300),
-    new Meal("Sushi", "8 pieces of salmon sushi", 200),
   ];
   //new-meal section
   addMeal(newMealFromChild: Meal) {
