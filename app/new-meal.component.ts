@@ -10,6 +10,7 @@ import { Meal } from './meal.model';
         <input #newName placeholder="Meal">
         <input #newDetails placeholder="Meal Details">
         <input #newCalories placeholder="Calories">
+        {{time}}
       </div>
       <div id="button">
         <button (click)="submitForm(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value=''; newCalories.value='';">SUBMIT</button>
@@ -22,7 +23,7 @@ export class NewMealComponent {
   @Output() newMealSender = new EventEmitter();
 
   submitForm(name: string, details: string, calories: number) {
-    var newMealToAdd: Meal = new Meal(name, details, calories);
+    var newMealToAdd: Meal = new Meal(name, details, calories, time);
     this.newMealSender.emit(newMealToAdd);
   }
 }

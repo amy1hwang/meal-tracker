@@ -17,6 +17,7 @@ import { Meal } from './meal.model';
          <li><strong>Meal:</strong> {{currentMeal.name}}</li>
          <li><strong>Details:</strong> {{currentMeal.details}}</li>
          <li><strong>Calories:</strong> {{currentMeal.calories}}</li>
+         <li><strong>Time:</strong> {{time}}</li>
          <button id="edit-button" (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
        </ul>
      </div>
@@ -27,17 +28,6 @@ import { Meal } from './meal.model';
 export class MealListComponent {
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
-
-  // totalCalories() {
-  //   var input: Meal[];
-  //   var total: number = 0;
-  //   for (var i = 0; i < input.length; i++) {
-  //     total += input[i].calories;
-  //     console.log(input[0].calories);
-  //   };
-  //   console.log(total);
-  //   return total;
-  // }
 
   editButtonHasBeenClicked(mealToEdit: Meal) {
     this.clickSender.emit(mealToEdit);

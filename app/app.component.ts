@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 import { Meal } from './meal.model';
 
-// <input [(ngModel)]="name" type="text" placeholder="Your Name">
 @Component({
   selector: 'app-root',
   template: `
   <div class="container">
     <div id="header">
       <div id="header-text">
-        <h1>My Daily Meal Tracker</h1>
-        <h3>for {{month}}/{{day}}/{{year}}</h3>
+        <h1>My Daily Meal Tracker</h1>;
+        <h3>for {{month}}/{{day}}/{{year}} {{hour}}:{{minute}}</h3>
       </div>
       <div id="header-img">
       </div>
@@ -29,6 +28,10 @@ export class AppComponent {
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
+  hour: number = this.currentTime.getHours();
+  minute: number = this.currentTime.getMinutes();
+  time: number = this.currentTime.getTime();
+
   //meal-list section
   masterMealList: Meal[] = [
   ];
