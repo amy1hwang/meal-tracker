@@ -18,9 +18,6 @@ This webpage is for users to enter in meals they have through out a day. Users c
 6. Run $ gulp build in Terminal.
 7. Run $ gulp serve in Terminal.
 
-# link to site on GitHub Pages
-https://amy1hwang.github.io/meal-tracker
-
 #Running / Development
 Visit your app at http://localhost:3000.
 
