@@ -17,7 +17,6 @@ import { Meal } from './meal.model';
          <li><strong>Meal:</strong> {{currentMeal.name}}</li>
          <li><strong>Details:</strong> {{currentMeal.details}}</li>
          <li><strong>Calories:</strong> {{currentMeal.calories}}</li>
-         <li><strong>Time:</strong> {{time}}</li>
          <button id="edit-button" (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
        </ul>
      </div>
