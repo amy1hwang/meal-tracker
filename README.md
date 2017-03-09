@@ -1,5 +1,5 @@
 # Meal Tracker
-## by Amy Hwang
+## by Amy Hwang | 01.20.2017
 
 # description of the webpage
 This webpage is for users to enter in meals they have through out a day. Users can enter information like meal, meal details, and calories.
