@@ -1,0 +1,25 @@
+/*
+Errno::ENOENT: No such file or directory - scss
+
+Backtrace:
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory - scss"; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3NzLmNzcyIsInNvdXJjZXMiOlsiY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi8qXG5FcnJubzo6RU5PRU5UOiBObyBzdWNoIGZpbGUgb3IgZGlyZWN0b3J5IC0gc2Nzc1xuXG5CYWNrdHJhY2U6XG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6NDg0OmluIGByZWFkJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjQ4NDppbiBgdXBkYXRlX3N0eWxlc2hlZXQnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6MjE1OmluIGBibG9jayBpbiB1cGRhdGVfc3R5bGVzaGVldHMnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy9wbHVnaW4vY29tcGlsZXIucmI6MjA5OmluIGBlYWNoJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjIwOTppbiBgdXBkYXRlX3N0eWxlc2hlZXRzJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvcGx1Z2luL2NvbXBpbGVyLnJiOjI5NDppbiBgd2F0Y2gnXG4vTGlicmFyeS9SdWJ5L0dlbXMvMi4wLjAvZ2Vtcy9zYXNzLTMuNC4yMi9saWIvc2Fzcy9wbHVnaW4ucmI6MTA5OmluIGBtZXRob2RfbWlzc2luZydcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL2V4ZWMvc2Fzc19zY3NzLnJiOjM2MDppbiBgd2F0Y2hfb3JfdXBkYXRlJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvZXhlYy9zYXNzX3Njc3MucmI6NTE6aW4gYHByb2Nlc3NfcmVzdWx0J1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvbGliL3Nhc3MvZXhlYy9iYXNlLnJiOjUyOmluIGBwYXJzZSdcbi9MaWJyYXJ5L1J1YnkvR2Vtcy8yLjAuMC9nZW1zL3Nhc3MtMy40LjIyL2xpYi9zYXNzL2V4ZWMvYmFzZS5yYjoxOTppbiBgcGFyc2UhJ1xuL0xpYnJhcnkvUnVieS9HZW1zLzIuMC4wL2dlbXMvc2Fzcy0zLjQuMjIvYmluL3Nhc3M6MTM6aW4gYDx0b3AgKHJlcXVpcmVkKT4nXG4vdXNyL2Jpbi9zYXNzOjIzOmluIGBsb2FkJ1xuL3Vzci9iaW4vc2FzczoyMzppbiBgPG1haW4+J1xuKi9cbmJvZHk6YmVmb3JlIHtcbiAgd2hpdGUtc3BhY2U6IHByZTtcbiAgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTtcbiAgY29udGVudDogXCJFcnJubzo6RU5PRU5UOiBObyBzdWNoIGZpbGUgb3IgZGlyZWN0b3J5IC0gc2Nzc1wiOyB9XG4iXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7RUFrQkU7QUFDRixBQUFJLElBQUEsQUFBQSxPQUFPLENBQUM7RUFDVixXQUFXLEVBQUUsR0FBSTtFQUNqQixXQUFXLEVBQUUsU0FBVTtFQUN2QixPQUFPLEVBQUUsaURBQWtELEdBQUciLCJuYW1lcyI6W119 */
